@@ -9,4 +9,6 @@ class MRRatingCounter(MRJob):
         yield rating, sum(occurences)
 
 if __name__ == '__main__':
+    # please put in the script parameter ( python command line ) : ml-100k/u.data
+    #example : python ml-100k/u.data
     MRRatingCounter.run()
