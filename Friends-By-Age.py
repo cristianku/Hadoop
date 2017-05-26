@@ -13,11 +13,14 @@ class MRFriendsByAge(MRJob):
             total += x
             numElements += 1
             
-        yield age, total / numElements
+        # yield age, str(int(total / numElements)) + " - " +str(numElements)
+
+
+        yield age, [int(total / numElements) , numElements]
 
 
 if __name__ == '__main__':
     MRFriendsByAge.run()
 
-    # run with : data/fakefriends.csv.xls
-    # python Friends-By-Age.py data/fakefriends.csv.xls
+# example:
+# python Friends-By-Age.py data/fakefriends.csv
