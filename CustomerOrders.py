@@ -10,6 +10,6 @@ class MRCustomerOrders(MRJob):
 
 if __name__ == '__main__':
     # please put in the script parameter ( python command line ) : ml-100k/u.data
-    #example : python customer-orders.csv
+    #example : python data/customer-orders.csv
 
     MRCustomerOrders.run()
